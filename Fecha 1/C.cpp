@@ -47,6 +47,11 @@ int main(){
                 if(!isSameSet(u, v)) mini = min(mini, c);
             }
         }
-        cout << mini << "\n";
+        if(!ok)
+            cout << "Thank you, Goodbye\n";
+        else if(mini == INT_MAX)
+            cout << "You better hire someone else\n";
+        else
+            cout << mini << "\n";
     }
 }
